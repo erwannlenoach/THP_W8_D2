@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!--connecting to the bootscrap css library-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+   <!--connecting to bootscrap theme css-->
+    <link href="./styles/bootstrap.css" rel="stylesheet" type="text/css">     
+    <!--connecting to the internal css file-->
+    <link href="./styles/style.css" rel="stylesheet" type="text/css">
+     <!--connecting to fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+
+    <title>Eventbright</title>
+  </head>
+     
+  <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary navbar-toggler-right">
+          <a class="navbar-brand" href="#">Eventbright</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Liste des évènements
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">S'inscrire / Se connecter</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">S'inscrire </a>
+                  <a class="dropdown-item" href="#">Se connecter</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Mon profil</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Éditer mon profil </a>
+                  <a class="dropdown-item" href="#">Mes évènements</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Se déconnecter</a>
+                </div>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="text" placeholder="Nom de l'évènement">
+              <button class="btn btn-secondary my-2 my-sm-0" type="submit">Recherche un évènement</button>
+            </form>
+          </div>
+        </nav>
+  </header>
+
+  <body>
+
+    <div class="jumbotron banner">
+      <h2 class="display-3">La culture ne s'arrêtera jamais</h2>
+      <button class="btn btn-primary my-2 my-sm-0" type="submit">Recherche un évènement</button>
+      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Créer un évènement</button>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <div class="card border-primary mb-3" style="max-width: 20rem;">
+            <div class="card-header">Nom de l'évènement</div>
+              <svg xmlns="http://www.w3.org/2000/svg" class="d-block user-select-none" width="100%" height="200" aria-label="Placeholder: Image cap" focusable="false" role="img" preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" style="font-size:1.125rem;text-anchor:middle">
+                <rect width="100%" height="100%" fill="#868e96"></rect>
+                <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image de l'évènement</text>
+              </svg>
+            <div class="card-body">
+              <p class="card-text"><i class="fas fa-location-arrow"></i> Localisation de l'évènement</p>
+              <hr>
+              <p class="card-text"><i class="fas fa-calendar-week"></i> Date de l'évènement</p>
+              <hr>
+              <p class="card-text"><i class="fas fa-user"></i> Créateur de l'évènement</p>
+            </div>
+            <div class="card-body">
+              <a href="#" class="card-link">Plus d'information</a>
+              <a href="#" class="card-link">Participer</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm">
+          <div class="card border-primary mb-3" style="max-width: 20rem;">
+            <div class="card-header">Nom de l'évènement</div>
+              <svg xmlns="http://www.w3.org/2000/svg" class="d-block user-select-none" width="100%" height="200" aria-label="Placeholder: Image cap" focusable="false" role="img" preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" style="font-size:1.125rem;text-anchor:middle">
+                <rect width="100%" height="100%" fill="#868e96"></rect>
+                <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image de l'évènement</text>
+              </svg>
+            <div class="card-body">
+              <p class="card-text"><i class="fas fa-location-arrow"></i> Localisation de l'évènement</p>
+              <hr>
+              <p class="card-text"><i class="fas fa-calendar-week"></i> Date de l'évènement</p>
+              <hr>  
+              <p class="card-text"><i class="fas fa-user"></i> Créateur de l'évènement</p>
+            </div>
+            <div class="card-body">
+              <a href="#" class="card-link">Plus d'information</a>
+              <a href="#" class="card-link">Participer</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm">
+          <div class="card border-primary mb-3" style="max-width: 20rem;">
+            <div class="card-header">Nom de l'évènement</div>
+              <svg xmlns="http://www.w3.org/2000/svg" class="d-block user-select-none" width="100%" height="200" aria-label="Placeholder: Image cap" focusable="false" role="img" preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" style="font-size:1.125rem;text-anchor:middle">
+                <rect width="100%" height="100%" fill="#868e96"></rect>
+                <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image de l'évènement</text>
+              </svg>
+            <div class="card-body">
+              <p class="card-text"><i class="fas fa-location-arrow"></i> Localisation de l'évènement</p>
+              <hr>
+              <p class="card-text"><i class="fas fa-calendar-week"></i> Date de l'évènement</p>
+              <hr> 
+              <p class="card-text"><i class="fas fa-user"></i> Créateur de l'évènement</p>
+            </div>
+            <div class="card-body">
+              <a href="#" class="card-link">Plus d'information</a>
+              <a href="#" class="card-link">Participer</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <div class="card mb-3">
+      <h3 class="card-header">Nom de l'évènement</h3>
+      <div class="card-body">
+    
+        <h5 class="card-subtitle text-muted"><i class="fas fa-file-alt"></i> Description de l'évènement</h5>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" class="d-block user-select-none" width="100%" height="200" aria-label="Placeholder: Image cap" focusable="false" role="img" preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" style="font-size:1.125rem;text-anchor:middle">
+        <rect width="100%" height="100%" fill="#868e96"></rect>
+        <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image de l'évènement</text>
+      </svg>
+      <div class="card-body">
+          <p class="card-text">Description de l'évènement</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><i class="fas fa-location-arrow"></i> Localisation de l'évènement</li>
+        <li class="list-group-item"><i class="fas fa-calendar-week"></i> Date de l'évènement</li>
+        <li class="list-group-item"><i class="fas fa-file-alt"></i> Description de l'évènement</li>
+        <li class="list-group-item"><i class="fas fa-user"></i> Créateur de l'évènement</li>
+      </ul>
+      <div class="card-body">
+        <a href="#" class="card-link">Participer à cet évènement</a>
+        <a href="#" class="card-link">Évènement suivant</a>
+      </div>
+      <div class="card-footer text-muted">
+        Il y a 2 jours
+      </div>
+    </div>
+
+    <div class="my-3 p-3 bg-white rounded box-shadow user-update">
+      <h6 class="border-bottom border-gray pb-2 mb-0">Participants</h6>
+      <div class="media text-muted pt-3">
+        <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt="" class="mr-2 rounded">
+        <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+          <strong class="d-block text-gray-dark">@username</strong>
+          participe à l'évènement. 
+        </p>
+      </div>
+      <div class="media text-muted pt-3">
+        <img data-src="holder.js/32x32?theme=thumb&bg=e83e8c&fg=e83e8c&size=1" alt="" class="mr-2 rounded">
+        <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+          <strong class="d-block text-gray-dark">@username</strong>
+          participe à l'évènement. 
+        </p>
+      </div>
+      <div class="media text-muted pt-3">
+        <img data-src="holder.js/32x32?theme=thumb&bg=6f42c1&fg=6f42c1&size=1" alt="" class="mr-2 rounded">
+        <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+          <strong class="d-block text-gray-dark">@username</strong>
+          participe à l'évènement. 
+        </p>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <form>
+         <div class="form-group">
+           <label for="comment">Votre commentaire</label>
+           <textarea name="comment" class="form-control" rows="3"></textarea>
+         </div>
+         <button type="submit" class="btn btn-primary">Validez</button>
+     </form>
+     </div>
+   
+     <div class="container mt-5">
+         <div class="row d-flex justify-content-center">
+             <div class="col-md-8">
+                 </div>
+                 <div class="card p-3">
+                     <div class="d-flex justify-content-between align-items-center">
+                         <div class="user d-flex flex-row align-items-center"> 
+                             <img src="https://i.imgur.com/ZSkeqnd.jpg" width="30" class="user-img rounded-circle mr-2"> 
+                             <span>
+                             <small class="font-weight-bold text-primary">Samantha</small> 
+                             <small class="font-weight-bold">Best show eveeer</small></span> 
+                         </div> 
+                         <small>Aujourd'hui, à 19:03</small>
+                     </div>
+                     <div class="action d-flex justify-content-between mt-2 align-items-center">
+                         <div class="reply px-4"> <small>Signalez</small> <span class="dots"></span> <small>Répondre</small></div>
+                         <div class="icons align-items-center"> <i class="fa fa-star text-warning"></i> <i class="fa fa-check-circle-o check-icon"></i> </div>
+                     </div>
+                 </div>
+                 <div class="card p-3 mt-2">
+                     <div class="d-flex justify-content-between align-items-center">
+                         <div class="user d-flex flex-row align-items-center"> 
+                             <img src="https://i.imgur.com/hczKIze.jpg" width="30" class="user-img rounded-circle mr-2"> 
+                             <span>
+                             <small class="font-weight-bold text-primary">Jimmy</small> 
+                             <small class="font-weight-bold">Cet évènement a l'air syyyyympa</small></span> 
+                         </div> 
+                         <small>Aujourd'hui à 15:04</small>
+                     </div>
+                     <div class="action d-flex justify-content-between mt-2 align-items-center">
+                         <div class="reply px-4"> <small>Signalez</small> <span class="dots"></span> <small>Répondre</small></div>
+                         <div class="icons align-items-center"> <i class="fa fa-star text-warning"></i> <i class="fa fa-check-circle-o check-icon"></i> </div>
+                     </div>
+                 </div>
+                 <div class="card p-3 mt-2">
+                     <div class="d-flex justify-content-between align-items-center">
+                         <div class="user d-flex flex-row align-items-center"> 
+                             <img src="https://i.imgur.com/C4egmYM.jpg" width="30" class="user-img rounded-circle mr-2"> 
+                             <span>
+                             <small class="font-weight-bold text-primary">Johny</small> 
+                             <small class="font-weight-bold">Surcôté comme festival</small></span> 
+                         </div> 
+                         <small>Hier à 21:01</small>
+                     </div>
+                     <div class="action d-flex justify-content-between mt-2 align-items-center">
+                         <div class="reply px-4"> <small>Signalez</small> <span class="dots"></span> <small>Répondre</small></div>
+                         <div class="icons align-items-center"> <i class="fa fa-star text-warning"></i> <i class="fa fa-check-circle-o check-icon"></i> </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ 
+    <form>
+      <legend>Inscription</legend>
+   
+      <div class="form-group">
+        <label for="exampleInputEmail1">Prénom</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Indiquez votre prénom">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Nom de famille</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Indiquez votre nom de famille">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Ville</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Indiquez votre ville de résidence">
+      </div>
+        <div class="form-group">
+        <label for="exampleInputEmail1">Adresse e-mail</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Indiquez votre e-mail">
+
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Mot de passe</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Indiquez votre mot de passe">
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirmez votre mot de passe">
+      </div>
+      
+      <div class="form-group">
+        <label for="exampleSelect2">Année de naissance</label>
+        <select multiple="" class="form-control" id="exampleSelect2">
+          <option>1999</option>
+          <option>1998</option>
+          <option>1997</option>
+          <option>1996</option>
+          <option>1995</option>
+        </select>
+      </div>
+    
+      <fieldset class="form-group">
+        <legend>Mes préférences</legend>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+            Être informé par e-mail des évènements à proximité de ma ville
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+            Être informé par e-mail des évènements de mes artistes préférés
+          </label>
+        </div>
+        <div class="form-check disabled">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" disabled="">
+            Ne pas recevoir d'e-mail de la part d'Eventbright
+          </label>
+        </div>
+      </fieldset>
+      <button type="submit" class="btn btn-primary">Validez</button>
+      
+  </form>
+  
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <div class="card border-primary mb-3" style="max-width: 20rem;">
+            <div class="card-header">Ville 1</div>
+              <svg xmlns="http://www.w3.org/2000/svg" class="d-block user-select-none" width="100%" height="200" aria-label="Placeholder: Image cap" focusable="false" role="img" preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" style="font-size:1.125rem;text-anchor:middle">
+                <rect width="100%" height="100%" fill="#868e96"></rect>
+                <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image de la ville</text>
+              </svg>
+            <div class="card-body">
+              <p class="card-text"><i class="fas fa-location-arrow"></i> Localisation de la ville</p>
+              <hr>
+              <p class="card-text"><i class="fas fa-calendar-week"></i> Nombre d'évènements</p>
+            </div>
+            <div class="card-body">
+              <a href="#" class="card-link">Plus d'information</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm">
+          <div class="card border-primary mb-3" style="max-width: 20rem;">
+            <div class="card-header">Ville 2</div>
+              <svg xmlns="http://www.w3.org/2000/svg" class="d-block user-select-none" width="100%" height="200" aria-label="Placeholder: Image cap" focusable="false" role="img" preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" style="font-size:1.125rem;text-anchor:middle">
+                <rect width="100%" height="100%" fill="#868e96"></rect>
+                <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image de l'évènement</text>
+              </svg>
+              <div class="card-body">
+                <p class="card-text"><i class="fas fa-location-arrow"></i> Localisation de la ville</p>
+                <hr>
+                <p class="card-text"><i class="fas fa-calendar-week"></i> Nombre d'évènements</p>
+              </div>
+              <div class="card-body">
+                <a href="#" class="card-link">Plus d'information</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm">
+          <div class="card border-primary mb-3" style="max-width: 20rem;">
+            <div class="card-header">Ville 3</div>
+              <svg xmlns="http://www.w3.org/2000/svg" class="d-block user-select-none" width="100%" height="200" aria-label="Placeholder: Image cap" focusable="false" role="img" preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" style="font-size:1.125rem;text-anchor:middle">
+                <rect width="100%" height="100%" fill="#868e96"></rect>
+                <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image de l'évènement</text>
+              </svg>
+              <div class="card-body">
+                <p class="card-text"><i class="fas fa-location-arrow"></i> Localisation de la ville</p>
+                <hr>
+                <p class="card-text"><i class="fas fa-calendar-week"></i> Nombre d'évènements</p>
+              </div>
+              <div class="card-body">
+                <a href="#" class="card-link">Plus d'information</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <div class="jumbotron banner_small">
+      <h2 class="display-3">Nous rejoindre</h2>
+      <button class="btn btn-primary my-2 my-sm-0" type="submit">Postes disponibles</button>
+      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Candidature spontanée</button>
+    </div>
+    
+    <footer class="bg-primary text-center text-white footer_site">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Form -->
+        <section class="">
+          <form action="">
+            <!--Grid row-->
+            <div class="row d-flex justify-content-center">
+              <!--Grid column-->
+              <div class="col-auto">
+                <p class="pt-2">
+                  <strong>Inscrivez vous à notre newsletter</strong>
+                </p>
+              </div>
+              <!--Grid column-->
+    
+              <!--Grid column-->
+              <div class="col-md-5 col-12">
+                <!-- Email input -->
+                <div class="form-outline form-white mb-4">
+                  <input class="form-control mr-sm-2" type="text" placeholder="Adresse e-mail">
+                </div>
+              </div>
+              <!--Grid column-->
+    
+              <!--Grid column-->
+              <div class="col-auto">
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-outline-light mb-4">
+                  S'inscrire
+                </button>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </form>
+        </section>
+        <!-- Section: Form -->
+      </div>
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+    
+          <!-- Twitter -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+    
+          <!-- Google -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-google"></i
+          ></a>
+    
+          <!-- Instagram -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+    
+          <!-- Linkedin -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+    
+          <!-- Github -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2021 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">Pho production</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    </html>
+      <!--connecting to the bootscrap's js -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   
+    </body>
+
+</html>
